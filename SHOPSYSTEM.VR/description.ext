@@ -1,0 +1,22 @@
+#include "modules\grad-moneymenu\grad_moneymenu.hpp"
+#include "VASS\gui\cfgGUI.hpp"
+enableDebugConsole = 1;
+
+class CfgFunctions {
+    #include "modules\grad-moneymenu\cfgFunctions.hpp"
+    #include "VASS\CfgFunctions.hpp"
+};
+
+
+
+class CfgGradMoneymenu {
+    canGiveDefault = 1;                                                    
+    canTransferToSidesDefault[] = {"east","west","independent","civilian"};
+    canTakeFromDeadDefault = 1;        
+    canSendDirectlyDefault = 0;                                    
+    canTakeFromSurrenderedDefault = 1;                                     
+    startMoney = 400;                                                        
+    startBankBalance = 0;                                                  
+    playersLoseMoneyOnDeath = 1;
+    atmObjects[] = {"Land_Atm_01_F"};                                      
+};
